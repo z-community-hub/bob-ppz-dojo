@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Community-driven learning labs and open technical resources.">
+  <title>z-community-hub | Coming soon</title>
+  <style>
+    :root {
+      --bg: #f3f4f6;
+      --surface: #ffffff;
+      --text: #24292f;
+      --muted: #57606a;
+      --violet: #8a3ffc;
+      --blue: #33b1ff;
+      --border: #d8dee4;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+
+    main {
+      width: min(720px, 100%);
+      padding: 48px 36px;
+      text-align: center;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: 0 12px 32px rgba(31, 35, 40, 0.08);
+    }
+
+    .pixel-rack {
+      position: relative;
+      width: 88px;
+      height: 112px;
+      margin: 0 auto 28px;
+      background: var(--violet);
+      border: 8px solid #6f2bd8;
+      box-shadow: 10px -10px 0 #b891ff;
+      image-rendering: pixelated;
+    }
+
+    .pixel-rack::before {
+      content: "";
+      position: absolute;
+      inset: 14px 12px;
+      background: repeating-linear-gradient(
+        to bottom,
+        var(--blue) 0 10px,
+        #1f2430 10px 18px
+      );
+    }
+
+    .pixel-rack::after {
+      content: "";
+      position: absolute;
+      right: 6px;
+      bottom: 6px;
+      width: 8px;
+      height: 8px;
+      background: #d7f1ff;
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--violet);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 7vw, 3.5rem);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+    }
+
+    .gradient-text {
+      color: var(--violet);
+    }
+
+    .intro {
+      max-width: 560px;
+      margin: 20px auto 0;
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin-top: 28px;
+      padding: 9px 14px;
+      color: #4c2a85;
+      background: #f2eaff;
+      border: 1px solid #dbc7ff;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 650;
+    }
+
+    .status-dot {
+      width: 9px;
+      height: 9px;
+      background: var(--blue);
+      border-radius: 50%;
+    }
+
+    footer {
+      margin-top: 36px;
+      padding-top: 22px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      font-size: 0.78rem;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 520px) {
+      main { padding: 38px 22px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="pixel-rack" aria-hidden="true"></div>
+
+    <p class="eyebrow">z-community-hub</p>
+    <h1><span class="gradient-text">zCommunity</span> Hub</h1>
+
+    <p class="intro">
+      Community-driven learning labs and open resources for developers,
+      technology professionals and enthusiasts.
+    </p>
+
+    <div class="status">
+      <span class="status-dot" aria-hidden="true"></span>
+      Work in progress · New content coming soon
+    </div>
+
+    <footer>
+      An independent, community-driven learning initiative focused on sharing
+      open technical resources, labs and practical knowledge.
+    </footer>
+  </main>
+</body>
+</html>
