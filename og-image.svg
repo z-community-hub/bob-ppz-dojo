@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#080808"/>
+
+  <!-- Grid decoration -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(191,95,255,0.04)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect x="600" y="0" width="600" height="630" fill="url(#grid)"/>
+
+  <!-- Violet gradient overlay -->
+  <rect x="600" y="0" width="600" height="630" fill="url(#vgrad)"/>
+  <defs>
+    <linearGradient id="vgrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#080808" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#1A0030" stop-opacity="0.4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Violet accent line top -->
+  <defs>
+    <linearGradient id="vline" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="transparent"/>
+      <stop offset="50%" stop-color="#BF5FFF"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="1200" height="1" fill="url(#vline)" opacity="0.6"/>
+
+  <!-- Eyebrow tag -->
+  <text x="80" y="230" font-family="'IBM Plex Mono', monospace" font-size="13" fill="#444444" letter-spacing="3">// PRE-BOBATHON PREPARATION</text>
+
+  <!-- Title line 1 -->
+  <text x="80" y="300" font-family="'IBM Plex Mono', monospace" font-size="56" font-weight="700" fill="#F0F0F0">Enter the</text>
+
+  <!-- Title line 2 — violet -->
+  <text x="80" y="370" font-family="'IBM Plex Mono', monospace" font-size="56" font-weight="700" fill="#BF5FFF">Dojo.</text>
+
+  <!-- Subtitle -->
+  <text x="80" y="420" font-family="'IBM Plex Sans', sans-serif" font-size="18" font-weight="300" fill="#888888">Master IBM Bob Premium Package for Z</text>
+
+  <!-- Bottom label -->
+  <text x="80" y="560" font-family="'IBM Plex Mono', monospace" font-size="12" fill="#444444" letter-spacing="2">&gt;_ bob-ppz-dojo  ·  Apache 2.0</text>
+
+  <!-- Prompt cursor decoration -->
+  <rect x="80" y="574" width="7" height="12" fill="#BF5FFF" opacity="0.7"/>
+</svg>
