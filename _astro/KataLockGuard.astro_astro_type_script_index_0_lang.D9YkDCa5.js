@@ -1,0 +1,1 @@
+import{o as r}from"./progression.BnBTdiFk.js";function c(){const t=document.getElementById("locked-banner"),o=document.getElementById("kata-content");if(!t||!o)return;const e=t.getAttribute("data-lock-slug");if(t.getAttribute("data-prev-slug"),!e)return;const n=window.dojoProgress;n&&n.isUnlocked(e)&&(t.setAttribute("hidden",""),o.removeAttribute("hidden"),n.start(e))}r(c);

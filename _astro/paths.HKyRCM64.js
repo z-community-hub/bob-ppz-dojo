@@ -1,0 +1,1 @@
+const t="/bob-ppz-dojo".replace(/\/+$/,"");function s(r="",e=""){const n=r.replace(/^\/+|\/+$/g,""),o=e&&e!=="en"?`${t}/${e}`:t;return n?`${o}/${n}/`:`${o}/`}function a(){if(typeof window>"u")return"";const e=window.location.pathname.replace(t,"").replace(/^\//,"").split("/")[0]??"";return["it","es"].includes(e)?e:""}export{a as g,s as w};
